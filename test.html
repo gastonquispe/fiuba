@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div id="main">
+    <p>Hola!</p>
+</div>
+<script>
+    function delayedAlert(msg, time) {
+        setTimeout(function () {
+            var obj = document.getElementById('main');
+            obj.style.border = "1px solid red";
+            alert(msg);
+        }, time);
+    }
+    //delayedAlert("Welcome!", 2000);
+
+    function addGenerator(num) {
+        return function(toAdd) {
+            return num + toAdd;
+        };
+    }
+
+    addFive = addGenerator(5);
+
+    delayedAlert(addFive(4));
+
+</script>
+</body>
+</html>
