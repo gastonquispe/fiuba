@@ -20,6 +20,7 @@
         <li><a href="url-get-request.php">AJAX TEST (GET)</a></li>
         <li><a href="url-post-request.php">AJAX TEST (POST)</a></li>
         <li><a href="generar-alumnos.php">GENERAR 10 ALUMNOS</a></li>
+        <li><a href="busqueda-alumnos.php">BUSQUEDA</a></li>
     </ul>
 </body>
 </html>

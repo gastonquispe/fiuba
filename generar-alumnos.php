@@ -3,6 +3,8 @@
 require 'vendor/autoload.php';
 require 'conexion.php';
 
+
+
 $faker = Faker\Factory::Create();
 
 $sql_nac = "SELECT count(*) as cant_nac FROM nacionalidades";
