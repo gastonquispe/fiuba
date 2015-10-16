@@ -1,5 +1,5 @@
 <?php if(isset($_SESSION['login'])) {?>
-    <div id = "menu_usuario">
+    <div id = "barra_titulo">
         <h3>USUARIO:<?php echo $_SESSION["nombre"] ?>  [<a href="logout.php">DESCONECTARSE</a>] </h3>
     </div>
 <?php } else { ?>

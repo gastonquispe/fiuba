@@ -1,14 +1,40 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald);
-/* @import url(https://fonts.googleapis.com/css?family=Archivo+Narrow); */
-/* @import url(https://fonts.googleapis.com/css?family=Cabin+Condensed); */
-/* @import url(https://fonts.googleapis.com/css?family=Montserrat); */
 @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
-#panel_operaciones {
-    width: 20%;
+
+/*---------SELECTORES DE ETIQUETA----------*/
+
+body {
+    background-image: url("../img/white.jpg");
+}
+
+h1, h2, h3 {
+    font-family: "Oswald";
+}
+
+a:link {
+    text-decoration: none;
+}
+
+/*---------------CONTENEDOR----------------*/
+
+.contenedor_principal {
+    width: 80%;
     margin: 0 auto;
 }
 
-#panel_operaciones li {
+.contenedor_principal  h1, h2{
+    text-align: center;
+}
+
+/*--------------MENU VERTICAL--------------*/
+
+#menu_vertical {
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#menu_vertical li {
     background-color: #FF9B6F;
     list-style-type: none;
     margin: 5px;
@@ -17,31 +43,51 @@
     font-weight: 700;
 }
 
-#panel_operaciones li:hover {
+#menu_vertical li:hover {
     background-color: #DF665A;
 }
 
-a:link {
-    text-decoration: none;
-}
+/*-------------BARRA DE TITULO-------------*/
 
-#menu_usuario {
+#barra_titulo {
     background-color: #E8665A;
 }
 
-#menu_usuario > h3 {
+#barra_titulo > h3 {
     text-align: right;
     margin : 0;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-h1, h3 {
-    font-family: "Oswald";
+/*----------------FORMULARIO---------------*/
+
+.formulario table, th, td, tr {
+    border: 0px none black;
+    margin: 0 auto;
 }
 
-.contenedor_principal {
-    width: 80%;
+.formulario th, td, tr {
+    padding: 5px;
+}
+
+/*-----------------LISTADO-----------------*/
+
+.listado {
     text-align: center;
     margin: 0 auto;
+}
+
+.listado td, th {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #FF6FAB;
+}
+
+.listado th {
+    background-color: #ffb9a2;
+}
+
+.listado tr:hover {
+    background-color: #ffcfc8;
 }

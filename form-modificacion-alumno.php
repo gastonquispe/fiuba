@@ -24,10 +24,11 @@
 <?php require "encabezado.php" ?>
 </head>
     <?php require "menu.php" ?>
+    <div class="contenedor_principal">
     <h1><?php echo $title ?></h1>
 
     <?php if ($chequeo == 1) { ?>
-        <form action="modificar-alumno.php" method="post" onsubmit="return validar_form_modificacion_alumno()">
+        <form class = "formulario" action="modificar-alumno.php" method="post" onsubmit="return validar_form_modificacion_alumno()">
             <input hidden type="text" id = "padron" name="padron" value="<?php echo $nro_padron ?>">
             <table>
                 <tr>
@@ -70,8 +71,8 @@
         <h3>EL ALUMNO NO EXISTE</h3>
     <?php } ?>
 
-    <a href="admin.php">INICIO</a>
-
+    <h2><a href="admin.php">INICIO</a></h2>
+    </div>
 </html>
 
 <?php

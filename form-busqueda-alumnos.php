@@ -19,6 +19,8 @@
 <body>
     <?php require "menu.php" ?>
 
+    <div class="contenedor_principal">
+    <h1><?php echo $title ?></h1>
     <script >
 
         function operacion_completada(event, request) {
@@ -47,13 +49,23 @@
 
     </script>
 
-    <form action="">
-        <label for="nombre_alumno">NOMBRE</label>
-        <input type="text" name="nombre_alumno" id="nombre_alumno" onkeyup="buscar_alumno()">
-    </form>
+        <form class="formulario" action="">
+            <table>
+                <tr>
+                    <td>
+                        <label for="nombre_alumno">NOMBRE</label>
+                    </td>
+                    <td>
+                        <input type="text" name="nombre_alumno" id="nombre_alumno" onkeyup="buscar_alumno()">
+                    </td>
+                </tr>
+            </table>
+        </form>
 
-    <div id="alumnos_encontrados"></div>
+        <div id="alumnos_encontrados" style="text-align: center"></div>
 
+        <h2><a href="admin.php">INICIO</a></h2>
+    </div>
 </body>
 </html>
 

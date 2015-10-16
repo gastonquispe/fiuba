@@ -21,7 +21,6 @@
 <html>
 <head>
     <title><?php echo $title ?></title>
-</head>
 
     <h3><?php echo $mensaje ?></h3>
 

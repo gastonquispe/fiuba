@@ -41,46 +41,45 @@
 
 	<h1><?php echo $title ; ?></h1>
 
-	<h3><?php echo $mensaje ?></h3>
+		<h3><?php echo $mensaje ?></h3>
 
-	<table>
+		<table>
 
-		<tr>
-			<td>NOMBRE</td>
-			<td><?php echo $alumno_nombre ?></td>
-		</tr>
-		<tr>
-			<td>APELLIDO</td>
-			<td><?php echo $alumno_apellido ?></td>
-		</tr>
-		<tr>
-			<td>PADRON</td>
-			<td><?php echo $alumno_padron ?></td>
-		</tr>
-		<tr>
-			<td>DNI</td>
-			<td><?php echo $alumno_dni ?></td>
-		</tr>
-        <tr>
-			<td>NACIONALIDAD</td>
-			<td><?php echo $alumno_nacionalidad ?></td>
-		</tr>
-		<tr>
-			<th colspan="2">
-				<a href = "form-alta-alumno.php">
-					AGREGAR OTRO ALUMNO
-				</a>
-			</th>
-		</tr>
-		<tr>
-			<th colspan="2">
-				<a href = "admin.php">
-					INICIO
-				</a>
-			</th>
-		</tr>
-	</table>
-
+			<tr>
+				<td>NOMBRE</td>
+				<td><?php echo $alumno_nombre ?></td>
+			</tr>
+			<tr>
+				<td>APELLIDO</td>
+				<td><?php echo $alumno_apellido ?></td>
+			</tr>
+			<tr>
+				<td>PADRON</td>
+				<td><?php echo $alumno_padron ?></td>
+			</tr>
+			<tr>
+				<td>DNI</td>
+				<td><?php echo $alumno_dni ?></td>
+			</tr>
+			<tr>
+				<td>NACIONALIDAD</td>
+				<td><?php echo $alumno_nacionalidad ?></td>
+			</tr>
+			<tr>
+				<th colspan="2">
+					<a href = "form-alta-alumno.php">
+						AGREGAR OTRO ALUMNO
+					</a>
+				</th>
+			</tr>
+			<tr>
+				<th colspan="2">
+					<a href = "admin.php">
+						INICIO
+					</a>
+				</th>
+			</tr>
+		</table>
 </body>
 </html>
 

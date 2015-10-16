@@ -11,10 +11,11 @@
 <?php require "encabezado.php" ?>
 <body>
 	<?php require "menu.php" ?>
+    <div class="contenedor_principal">
 
     <h1><?php echo $title ; ?></h1>
 
-    <form action="alta-alumno.php" method="post" onsubmit="return validar_form_alta_alumno()">
+    <form class="formulario" action="alta-alumno.php" method="post" onsubmit="return validar_form_alta_alumno()">
         <table>
             <tr>
                 <td>NOMBRE:</td>
@@ -49,7 +50,8 @@
         </table>
     </form>
 
-    <a href="admin.php">INICIO</a>
+    <h2><a href="admin.php">INICIO</a></h2>
+    </div>
 </body>
 </html>
 

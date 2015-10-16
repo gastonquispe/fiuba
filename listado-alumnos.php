@@ -43,15 +43,17 @@
     </script>
 
     <?php require "menu.php" ?>
+    <div class="contenedor_principal">
+
     <h1><?php echo $title ; ?></h1>
-    <table>
+    <table class="listado">
         <tr>
             <th>PADRON</th>
             <th>NOMBRE</th>
             <th>APELLIDO</th>
             <th>DNI</th>
             <th>PAIS</th>
-            <th></th>
+            <th>ELIMINAR</th>
         </tr>
 
         <?php while ($fila = mysqli_fetch_array($resultado)) { ?>
@@ -67,7 +69,8 @@
 
     </table>
 
-    <a href="admin.php">INICIO</a>
+    <h2><a href="admin.php">INICIO</a></h2>
+    </div>
 </body>
 </html>
 
