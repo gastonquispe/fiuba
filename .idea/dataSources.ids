@@ -1,31 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
   <data-source name="MySQL - gaston@localhost" uuid="cc38ce3e-6183-4396-985b-9af16e82d472">
-    <database-info product="MySQL" version="5.5.43-0ubuntu0.14.04.1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+    <database-info product="MySQL" version="5.6.16" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.34 ( Revision: jess.balint@oracle.com-20141014163213-wqbwpf1ok2kvo1om )">
       <extra-name-characters>#@</extra-name-characters>
       <identifier-quote-string>`</identifier-quote-string>
     </database-info>
-    <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
     <schema name="" catalog="gaston"/>
     <table name="alumnos" schema="" catalog="gaston" type="TABLE">
-      <column name="padron" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
-      <column name="nombre" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12"/>
-      <column name="apellido" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12"/>
-      <column name="dni" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
-      <column name="id_nac" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="padron" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="nombre" sqlType="VARCHAR" precision="30" scale="0" nullable="false" jdbcType="12"/>
+      <column name="apellido" sqlType="VARCHAR" precision="30" scale="0" nullable="false" jdbcType="12"/>
+      <column name="dni" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="id_nac" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <primary-key name="PRIMARY" columns="padron"/>
-      <foreign-key name="fk_nac" columns="id_nac" ref-table="nacionalidades" ref-schema="" ref-catalog="gaston" ref-columns="id_nac" update-rule="0" delete-rule="0" deferrability="2"/>
-      <index name="alumnos_id_nac_IDX" unique="false" columns="id_nac"/>
+      <foreign-key name="nac_alumno" columns="id_nac" ref-table="nacionalidades" ref-schema="" ref-catalog="gaston" ref-columns="id_nac" update-rule="0" delete-rule="0" deferrability="2"/>
     </table>
     <table name="nacionalidades" schema="" catalog="gaston" type="TABLE">
       <column name="id_nac" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
       <column name="nacionalidad" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12"/>
       <primary-key name="PRIMARY" columns="id_nac"/>
-      <exported-key name="fk_nac" table="alumnos" schema="" catalog="gaston" columns="id_nac"/>
+      <exported-key name="nac_alumno" table="alumnos" schema="" catalog="gaston" columns="id_nac"/>
     </table>
     <table name="usuarios" schema="" catalog="gaston" type="TABLE">
-      <column name="usu_nombre" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
-      <column name="usu_clave" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="usu_nombre" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="usu_clave" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="usu_nombre"/>
+      <index name="clave_unique" unique="true" columns="usu_clave"/>
     </table>
   </data-source>
 </component>

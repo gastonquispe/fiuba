@@ -1,0 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+/* @import url(https://fonts.googleapis.com/css?family=Archivo+Narrow); */
+/* @import url(https://fonts.googleapis.com/css?family=Cabin+Condensed); */
+/* @import url(https://fonts.googleapis.com/css?family=Montserrat); */
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+#panel_operaciones {
+    width: 20%;
+    margin: 0 auto;
+}
+
+#panel_operaciones li {
+    background-color: #FF9B6F;
+    list-style-type: none;
+    margin: 5px;
+    font-family: 'Yanone Kaffeesatz';
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+#panel_operaciones li:hover {
+    background-color: #DF665A;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+#menu_usuario {
+    background-color: #E8665A;
+}
+
+#menu_usuario > h3 {
+    text-align: right;
+    margin : 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h1, h3 {
+    font-family: "Oswald";
+}
+
+.contenedor_principal {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}

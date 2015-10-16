@@ -1,7 +1,7 @@
 <?php
 $server="localhost";
 $usuario_db="root";
-$clave_db="quirispe35";
+$clave_db="";
 $base="gaston";
 $link=mysqli_connect($server,$usuario_db,$clave_db,$base);
 //mysqli_set_charset($link, "utf8");

@@ -36,7 +36,7 @@
             var request = new XMLHttpRequest();
             request.addEventListener('load', function(event){operacion_completada(event, padron)}, false);
 
-            request.open('POST', 'php/rest/alumno/eliminar.php', true);
+            request.open('POST', 'php/soap/alumno/eliminar.php', true);
             request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
             request.send("nro_padron=" + padron);
         }

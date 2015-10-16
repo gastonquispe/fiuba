@@ -22,14 +22,20 @@
     <script >
 
         function operacion_completada(event, request) {
-            $$("alumnos_encontrados").innerHTML = request.responseText;
 
-            //$("alumnos_encontrados").innerHTML = $("nombre_alumno").value;
+            if (request.status == 200) {
+                $$("alumnos_encontrados").innerHTML = request.responseText;
+            }
+            else {
+                alert("MUERTOS");
+            }
         }
 
         function buscar_alumno() {
-            //if($$("nombre_alumno").value.length < 3)
-            //    return true;
+            if($$("nombre_alumno").value.length == 0) {
+                $$("alumnos_encontrados").innerHTML = "";
+                return true;
+            }
 
             var request = new XMLHttpRequest();
 
