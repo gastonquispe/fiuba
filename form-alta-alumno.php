@@ -15,7 +15,7 @@
 
     <h1><?php echo $title ; ?></h1>
 
-    <form class="formulario" action="alta-alumno.php" method="post" onsubmit="return validar_form_alta_alumno()">
+    <form class="formulario" method="post" onsubmit="return validar_form_alta_alumno()">
         <table>
             <tr>
                 <td>NOMBRE:</td>

@@ -22,6 +22,9 @@
             <!--<li><a href="url-post-request.php">AJAX TEST (POST)</a></li>-->
             <li><a href="generar-alumnos.php">GENERAR 10 ALUMNOS</a></li>
             <li><a href="form-busqueda-alumnos.php">BUSQUEDA</a></li>
+            <li><a href="abm-ajax.php">ABM-AJAX</a></li>
+            <li><a href="test-get-ajax.php">TEST-GET-AJAX</a></li>
+            <li><a href="form-busqueda-alumnos-mejorada.php">BUSQUEDA-ALUMNOS-MEJORADA</a></li>
         </ul>
     </div>
 </body>
